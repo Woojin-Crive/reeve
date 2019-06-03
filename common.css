@@ -6,6 +6,11 @@ body {
 
 nav {
     height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .tool {
@@ -14,20 +19,26 @@ nav {
     right: 0px;
     height: 50px;
     margin-right: 40px;
-    margin-top: 30px;
-    color: white;
-    font-size: 16px;
+    margin-top: 35px;
 }
 
 .tool>span {
+    color: white;
+    font-size: 16px;
     margin-left: 30px;
     padding-bottom: 25px;
     padding-top: 80px;
-    transition: border-bottom 100ms ease-in-out;
+    transition: 0.5s all;
+}
+
+.tool:hover span {
+    opacity: .2;
+    filter: blur(1px);
 }
 
 .tool>span:hover {
-    border-bottom: 2px solid white;
+    opacity: 1;
+    filter: blur(0px);
 }
 
 .logo {
@@ -43,26 +54,26 @@ nav {
 }
 
 .backImage {
-    min-height: 100vh;
-    width: auto;
+    background-image: url(house.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     z-index: -1;
-    position: fixed;
-    top: 0px;
-    height: 100%;
 }
 
 .title {
     height: 500px;
-    width: 500px;
+    width: 400px;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-left: 100px;
     font-size: 20px;
 }
 
-.title>center>img {
+.everything>img {
     height: 100px;
 }
 
@@ -78,6 +89,33 @@ nav {
     position: relative;
 }
 
+.mobileText {
+    display: block;
+    font-size: 30px;
+    color: black;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.location {
+    text-align: left;
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.location>input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    width: 330px;
+    padding-left: 16px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+.everything{
+    margin-bottom: 10px;
+}
 @media screen and (max-width: 768px) {
     .tool {
         display: none;
@@ -100,7 +138,33 @@ nav {
     .title>center>img {
         height: 70px;
     }
-    nav{
+
+    nav {
         height: 100vh;
+        width: 100%;
+    }
+
+    .backImage {
+        min-height: 0px;
+        width: auto;
+        z-index: -1;
+        top: 0px;
+        height: 300px;
+        background-image: url(house.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .mobileText {
+        display: block;
+        font-size: 25px;
+        color: black;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .explorer {
+        position: absolute;
+        top: 100%;
     }
 }
