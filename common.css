@@ -15,21 +15,27 @@ nav {
     right: 0px;
     height: 50px;
     margin-right: 40px;
+    margin-top: 30px;
     color: white;
     font-size: 16px;
 }
 
 .tool>span {
-    line-height: 50px;
     margin-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+    transition: border-bottom 100ms ease-in-out;
+}
+
+.tool>span:hover {
     border-bottom: 2px solid white;
 }
 
 .logo {
     height: 50px;
     width: 125px;
-    margin: 20px;
+    padding-top: 16px;
+    padding-left: 20px;
 }
 
 .logo>img {
