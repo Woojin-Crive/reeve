@@ -1,22 +1,84 @@
 body {
     margin: 0px;
     width: 100%;
+    top: 0px;
 }
 
-#nav {
+nav {
     height: 400px;
     width: 100%;
 }
 
-#backImage {
+.tool {
     position: absolute;
+    z-index: 2;
+    right: 0px;
+    height: 50px;
+    line-height: 200%;
+    margin-right: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.tool>span {
+    line-height: 60px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    height: 50px;
+    width: 125px;
+    margin: 20px;
+}
+
+.logo>img {
+    height: 50px;
+    margin-left: 6px;
+}
+
+.backImage {
+    min-height: 100vh;
     width: 100%;
     z-index: -1;
+    position: fixed;
+    top: 0px;
 }
 
-#logo>svg img {
-    color: white;
-    height: 50px;
+.title {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 20px;
 }
 
-#title {}
+.verticalSpan {
+    vertical-align: middle;
+}
+
+.explorer {
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+@media (min-width:700px) {
+    nav {
+        height: 100vh;
+        position: relative;
+    }
+}
+
+@media (max-width:699px) {
+    nav {
+        height: 50vh;
+        position: relative;
+    }
+}
