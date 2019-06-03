@@ -1,6 +1,22 @@
+body {
+    margin: 0px;
+    width: 100%;
+}
+
 #nav {
     height: 400px;
-    background-image: url("house.jpg");
+    width: 100%;
+}
+
+#backImage {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo>svg img {
+    color: white;
+    height: 50px;
 }
 
 #title {}
