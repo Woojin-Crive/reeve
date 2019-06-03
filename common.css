@@ -74,7 +74,7 @@ nav {
 }
 
 .everything>img {
-    height: 100px;
+    height: 90px;
 }
 
 .verticalSpan {
@@ -84,9 +84,17 @@ nav {
 .explorer {
     z-index: 1;
     background-color: white;
-    width: 100%;
     height: 500px;
     position: relative;
+    padding: 0px 60px 0px 60px;
+}
+
+.explorer>span {
+    display: block;
+    font-size: 24px;
+    margin-top: 40px;
+    font-weight: bolder;
+    margin-bottom: 40px;
 }
 
 .mobileText {
@@ -118,10 +126,12 @@ nav {
 .right {
     text-align: right;
 }
-.rightTemp{
+
+.rightTemp {
     width: 100%;
     text-align: right;
 }
+
 .rightTemp>button {
     margin-top: 40px;
     border: 0px;
@@ -130,11 +140,92 @@ nav {
     height: 40px;
     font-size: 16px;
     border-radius: 5px;
-    background-color: rgb(255, 90, 95);
+    background-color: #4376FF;
 }
 
 .everything {
     margin-bottom: 10px;
+}
+
+.cate {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.label {
+    width: 220px;
+    text-align: center;
+    float: right;
+    height: 100%;
+    display: table;
+}
+
+.label>span {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.thumbnail-wrap {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+}
+
+.thumbnail-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    padding-top: 80px;
+    width: 80px;
+    border-radius: 4px;
+}
+
+.thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.thumbnail .centered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+.thumbnail .centered img {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumbnail img.portrait {
+    width: 100%;
+    max-width: none;
+    height: auto;
+}
+
+.thumbnail img.landscape {
+    width: auto;
+    max-width: none;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,5 +278,31 @@ nav {
     .explorer {
         position: absolute;
         top: 100%;
+        width: auto;
+        text-align: center;
+        padding: 0;
     }
+
+    .horiScroll {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .thumbnail-wrap {
+        display: inline-block;
+        width: 25%;
+        vertical-align: middle;
+        float: left;
+    }
+
+    .cate {
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    .label {
+        width: 220px;
+    }
+
+
 }
