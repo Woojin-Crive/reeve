@@ -63,7 +63,7 @@ nav {
 }
 
 .title {
-    height: 500px;
+    height: 440px;
     width: 400px;
     background-color: white;
     border-radius: 5px;
@@ -102,20 +102,41 @@ nav {
     display: block;
     width: fit-content;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 .location>input {
     height: 40px;
     border-radius: 5px;
-    border: 1px solid #C0C0C0;
+    border: 1px solid #D0D0D0;
     width: 330px;
     padding-left: 16px;
     margin-top: 16px;
     font-size: 14px;
 }
-.everything{
+
+.right {
+    text-align: right;
+}
+.rightTemp{
+    width: 100%;
+    text-align: right;
+}
+.rightTemp>button {
+    margin-top: 40px;
+    border: 0px;
+    color: white;
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(255, 90, 95);
+}
+
+.everything {
     margin-bottom: 10px;
 }
+
 @media screen and (max-width: 768px) {
     .tool {
         display: none;
