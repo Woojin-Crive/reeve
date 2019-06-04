@@ -84,7 +84,7 @@ nav {
 .explorer {
     z-index: 1;
     background-color: white;
-    height: 500px;
+    height: 1000px;
     position: relative;
     padding: 0px 60px 0px 60px;
 }
@@ -147,13 +147,82 @@ nav {
     margin-bottom: 10px;
 }
 
+.house2 {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    height: 2000px;
+    background-color: white;
+    padding-top: 80px;
+    z-index: 12;
+    border-radius: 20px;
+    display: table-column;
+    text-align: center;
+}
+
+.house2>span {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    left: 2.5%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.house2>img {
+    text-align: center;
+    display: table-;
+    width: 95%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 20px;
+}
+
+#help {
+    height: 0;
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+    transition: 1s all;
+    opacity: 0;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+#help>span>img {
+    width: 100%;
+    height: auto;
+}
+
+#register {
+    height: 0;
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+    transition: 1s all;
+    opacity: 0;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+#register>span>img {
+    width: 100%;
+    height: auto;
+}
+
 .cate {
     width: 300px;
     height: 80px;
     border: 1px solid #D0D0D0;
     border-radius: 5px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 80px;
     margin-bottom: 20px;
 }
 
@@ -178,7 +247,20 @@ nav {
     vertical-align: middle;
 }
 
+.image-wrap {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+}
+
 .thumbnail-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrap img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -191,6 +273,13 @@ nav {
     padding-top: 80px;
     width: 80px;
     border-radius: 4px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
 }
 
 .thumbnail img {
@@ -210,7 +299,24 @@ nav {
     transform: translate(50%, 50%);
 }
 
+.image .centered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
 .thumbnail .centered img {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.image .centered img {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -226,6 +332,53 @@ nav {
     width: auto;
     max-width: none;
     height: 100%;
+}
+
+.image img.landscape {
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+.recommend {
+    width: 100%;
+    height: 300px;
+}
+
+.recontent {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    width: 23%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+}
+
+.spanCon {
+    z-index: 5;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    width: 19.5%;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    margin-top: 220px;
+    font-weight: bold;
+}
+
+.spanCona {
+    z-index: 5;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    width: 19.5%;
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+    margin-top: 220px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -281,11 +434,6 @@ nav {
         width: auto;
         text-align: center;
         padding: 0;
-    }
-
-    .horiScroll {
-        overflow: auto;
-        white-space: nowrap;
     }
 
     .thumbnail-wrap {

@@ -11,14 +11,24 @@
 
 <body>
     <div class="backImage"></div>
+    <div id="help">
+        <span>
+            <img src="help@2x.png" alt="">
+        </span>
+    </div>
+    <div id="register">
+        <span>
+            <img src="register@2x.png" alt="">
+        </span>
+    </div>
     <nav>
         <div class="tool">
-            <span>리브 등록하기</span>
-            <span>도움말</span>
+            <span onclick="register()">리브 등록하기</span>
+            <span onclick="help()">도움말</span>
             <span>회원가입</span>
-            <span>로그인</span>
+            <span onclick="register()">로그인</span>
         </div>
-        <div class="logo">
+        <div class="logo" onclick="goHome()">
             <img src="reeve_logo_white@2x.png" alt="reeve_logo">
         </div>
         <div class="title">
@@ -134,12 +144,55 @@
             <div class="thumbnail-wrap">
                 <div class="thumbnail">
                     <div class="centered">
-                        <img src="house.jpg" class="landscape">
+                        <img src="rain.jpg" class="landscape">
                     </div>
                 </div>
             </div>
             <div class="label">
-                <span>숙소</span>
+                <span>잡화</span>
+            </div>
+        </div>
+        <span>리브 추천</span>
+        <div class="recommend">
+            <div class="recontent" onclick="goSecond()">
+                <span class="spanCon">아파트</br>성남시</span>
+                <div class="image-wrap">
+                    <div class="image">
+                        <div class="centered">
+                            <img src="house.jpg" class="landscape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recontent">
+                <span class="spanCon">기타</br>인천시</span>
+                <div class="image-wrap">
+                    <div class="image">
+                        <div class="centered">
+                            <img src="guitar.jpg" class="landscape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recontent">
+                <span class="spanCon">주방,요리도구</br>인천시</span>
+                <div class="image-wrap">
+                    <div class="image">
+                        <div class="centered">
+                            <img src="cook.jpg" class="landscape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recontent">
+                <span class="spanCona">전기차</br>서울</span>
+                <div class="image-wrap">
+                    <div class="image">
+                        <div class="centered">
+                            <img src="car.jpg" class="landscape">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
