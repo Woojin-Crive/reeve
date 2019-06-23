@@ -17,7 +17,7 @@ function register() {
         element.style.opacity = "0";
         element.style.height = "0";
     }
-}
+}asdwdasdawdasdaw
 
 function goHome(){
     location.replace("index.html");
